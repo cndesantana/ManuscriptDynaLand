@@ -1,0 +1,154 @@
+% Template for PLoS
+% Version 1.0 January 2009
+%
+% To compile to pdf, run:
+% latex plos.template
+% bibtex plos.template
+% latex plos.template
+% latex plos.template
+% dvipdf plos.template
+\DeclareFixedFont{\auacc}{OT1}{phv}{m}{n}{12}   % Patch by Gerry 3/21/07
+\documentclass[11pt]{article}
+
+% amsmath package, useful for mathematical formulas
+\usepackage{amsmath}
+% amssymb package, useful for mathematical symbols
+\usepackage{amssymb}
+\usepackage{wasysym}
+\usepackage[table]{xcolor}
+\usepackage{longtable}
+\usepackage{lscape}
+% graphicx package, useful for including eps and pdf graphics
+% include graphics with the command \includegraphics
+\usepackage{graphicx}  
+\usepackage{verbatim}
+\usepackage{float}
+\floatstyle{boxed} 
+\restylefloat{figure}
+% citep package, to clean up citations in the main text. Do not remove.
+%\usepackage{cite}
+\usepackage{natbib}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc} 
+\usepackage{textcomp}
+\usepackage{lineno} 
+\newcommand{\carlos}[1]{\textcolor{red}{#1}}
+%\newcommand{\co}[1]{{\color{red} #1}}   
+% Use doublespacing - comment out for single spacing
+%\usepackage{setspace} 
+%\doublespacing
+
+% Text layout
+\topmargin 0.0cm
+\oddsidemargin 0.5cm
+\evensidemargin 0.5cm
+\textwidth 17cm 
+\textheight 21cm
+
+% Bold the 'Figure #' in the caption and separate it with a period
+% Captions will be left justified
+%\usepackage[labelfont=bf,labelsep=period,justification=raggedright]{caption}
+
+% Use the PLoS provided bibtex style
+
+% Remove brackets from numbering in List of References
+%\makeatletter
+%\renewcommand{\@biblabel}[1]{\quad#1.}
+%\makeatother
+
+% Leave date blank
+
+
+\pagestyle{myheadings}
+%% ** EDIT HERE **
+%* EDIT HERE **
+%% PLEASE INCLUDE ALL MACROS BELOW
+
+%% END MACROS SECTION
+
+\begin{document}
+\thispagestyle{empty}
+\title{{\bf How to represent fluctuations at spatiotemporal scales?}}
+\vspace{-0.1 in}
+  %\author{Blake Matthews$^{1,*}$ and Carlos J. Meli\'an$^{2}$\\
+  % $^1$Department of Aquatic Ecology,\\Swiss Federal Institute of
+  %  Aquatic Science and Technology, Switzerland.\\    
+  % $^2$Fish Ecology and Evolution Department,\\ Center for Ecology, Evolution and Biogeochemistry,\\
+  %  Swiss Federal Institute of Aquatic Science and Technology, Switzerland.\\
+  %  \\
+  %  Keywords: ecological feedbacks, divergence, landscape genetics, speciation theory,\\
+  %  gene flow, assortative mating, ecological drift, individual based model.\\
+  %  Type of Article: X\\
+  %  Number of figures: X; Number of tables: X\\
+  %  $\ast$ Corresponding author: e-mail:blake.matthews@eawag.ch.}}
+
+\date{}
+\maketitle
+\baselineskip=8.75 mm
+%\linenumbers
+%\modulolinenumbers[2]
+\doublespacing
+%\newpage
+\markboth{{\small}
+
+%\section*{Abstract} 
+%  \newpage
+\section*{Figures}
+
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=5.5in]{scalegraphsml.eps}
+\end{center}
+\caption{This diagram illustrates the approximate spatial and temporal
+  ranges for a variety of oceanic phenomena, along with estimated
+  observational capabilities of various research platforms. Three
+  basic trophic levels (phytoplankton, zooplankton, and fish) are
+  shown. Thus, aircraft observations are ideal for large-scale, high
+  resolution regional (synoptic) characterizations, encompassing a
+  single tidal cycle and population variability at a scale of 10-1000
+  meters. In contrast, satellites can best observe variability over
+  10-1000 kilometers, with a maximum temporal resolution of about 1
+  day. Ship observations can be at very high spatial resolution but
+  are more limited in spatial range than aircraft or satellites.}
+\end{figure}
+
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=5.5in]{fig14.2Holling1992.eps}
+\end{center}
+\caption{Temporal and spatial scales within which large
+  wading birds operate daily and over their lifetimes (modified from
+  Holling, 1992).}
+\end{figure}
+
+\begin{figure}[ht!]
+\begin{center}
+\includegraphics[width=5.5in]{OSjDM.eps}
+\end{center}
+\caption{Oceanic processes for temporal scales spanning 10 orders of
+  magnitude, while spatial scales span 12 orders of
+  magnitude. Presumably mantle solvers would extend the upper bounds
+  on each of these scales. Downloaded from
+  http://earthscience.stackexchange.com/questions/49/similarities-between-grand-circulation-solvers-and-mantle-convection-solvers.}
+\end{figure}
+
+\begin{figure}[ht!]
+\begin{center}
+\includegraphics[width=5.5in]{atmosphere_scales.eps}
+\end{center}
+\caption{Atmospheric scales}
+\end{figure}
+
+\begin{figure}[ht!]
+\begin{center}
+\includegraphics[width=5.5in]{space_time_scale.eps}
+\end{center}
+\caption{Atmospheric scales again}
+\end{figure}
+
+%\newpage
+%\bibliographystyle{ecography}
+%\bibliography{EvolutionMultilevel}
+\end{document}
+
+
